@@ -2,33 +2,38 @@
 <html><head><meta charset ="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
-table.type03 {
-    border-collapse: collapse;
-    text-align: left;
-    line-height: 1.5;
-    border-top: 1px solid #ccc;
-    border-left: 3px solid #369;
-    margin : 20px 10px;
+.bbutton{
+    width:150px;
+    background-color: #f8585b;
+    border: none;
+    color:#fff;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
 }
-table.type03 th {
-    width: 147px;
-    padding: 10px;
-    font-weight: bold;
-    vertical-align: top;
-    color: #153d73;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-
+.imgontext{
+    position: relative;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFq6vS7D6qjNT0zqh1YrNgc4pNOPsqkd41ffk2StIeQQkb8Kd);
+    height: 100vh;
+    background-size: cover;
 }
-table.type03 td {
-    width: 349px;
-    padding: 10px;
-    vertical-align: top;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+.imgontext .content{
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%, -50%);
+     font-size:5rem;
+     color: white;
+     z-index: 2;
+     text-align: center;
 }
 header, nav, section, article, aside, footer
-{border:1px solid gray; margin:5px; padding:8px; width:1000px;}
+{border:1px solid gray; margin:5px; padding:8px; width:1000px; text-align:center;}
 headerimg {width:990px; height:200px;}
 section{width:750px; float:left;}
 section section{width:725px; float:left;}
@@ -48,54 +53,37 @@ a:active {color:blue;background-color:transparent;text-decoration:none;}
 <body>
 <header>
 <h2>인터넷프로그래밍 포트폴리오</h2>
-<img src="scene.png" alt="히말라야"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFq6vS7D6qjNT0zqh1YrNgc4pNOPsqkd41ffk2StIeQQkb8Kd" alt="히말라야"/>
 </header>
 <nav>
 <ul>
-<li><a href="https://www.naver.com/" target="_blank">개인 spec 정리</a></li>
-<li><a href="anchor2.html">학력 및 경력 </a></li>
-<li><a href="#chapter1">수업이수현황</a></li>
-<li><a href="https://goeun23.github.io/homework/projects.html" >프로젝트</a></li>
-<li><a href="#chapter1">문의하기</a></li>
+<li><a href="https://goeun23.github.io/homework/resume.html">RESUME</a></li>
+<li><a href="#chapter1">SELF-INTRODUCTION</a></li>
+<li><a href="https://goeun23.github.io/homework/timetable.html">TIME TABLE</a></li>
+<li><a href="#chapter3">CONTACT</a></li>
 </ul>
 </nav>
 <section><!-- main -->
 <section><h3 id="chapter1">학력, 경력</h3>
-<table class="type03">
-<th>기간</th><th>내용</th><th>비고</th>
-<tr><td>2015.03</td><td>대전대학교 입학</td><td></tr>
-<tr><td>2015.12</td><td>글로벌인사이트 Purdue Univ</td><td>어학연수</td></tr>
-<tr><td>2017.06</td><td>대전대학교 하계 '아두이노 특강'</td><td>교육</td></tr>
-<tr><td>2017.09</td><td>ICT 글로벌인턴십</td><td>미국 'KARFARM'</td></tr>
-</table>
-<div>
-<a href="https://www.google.com"target="_blank">
-<img src="../homework/images/book.jpg" alt="수업이수현황"/></a><br/>
-<a href="https://www.google.com"target="_blank">
-<img src="../homework//images/projects.png" alt="프로젝트"/></a><br/>
-<a href="https://www.google.com"target="_blank">
-<img src="../homework//images/contact.png" alt="문의하기"/></a><br/>
-<a href="#chapter2">교내외활동</a><br/>
+<div class="imgontext">
+<div class="content">
+
+<input type="button" class="bbutton" value="이력서바로가기" onClick="window.open('http://google.com')">
+<input type="button" class="bbutton" value="자기소개서바로가기" onClick="window.open('http://google.com')">
+<img src="https://cdn.pixabay.com/photo/2015/09/04/23/20/macbook-923128_1280.jpg" width = 700px; heigh=300px; alt="히말라야"/>
+</div>
 </div>
 </section>
 </section><!-- /main -->
-<section><h3 id="chapter2">교내 외 활동</h3>
-<table class="type03">
-<th>기간</th><th>활동</th><th>비고</th>
-<tr><td>2016.03~2017.06</td><td>대전동구지역아동센터 자원봉사</td><td></td></tr>
-<tr><td>2016.06~2016.08</td><td>하나정형외과 보조업무</td><td></tr>
-<tr><td>2017.03~2017.08</td><td>컴퓨터공학과 근로학생</td><td></td></tr>
-<tr><td>2017.09</td><td>ICT 글로벌인턴십</td><td>미국 'KARFARM'</td></tr>
-</table>
-<div>
-<a href="https://www.google.com"target="_blank">
-<img src="../homework/images/book.jpg" alt="수업이수현황"/></a><br/>
-<a href="https://www.google.com"target="_blank">
-<img src="../homework//images/projects.png" alt="프로젝트"/></a><br/>
-<a href="https://www.google.com"target="_blank">
-<img src="../homework//images/contact.png" alt="문의하기"/></a><br/>
-<a href="#chapter2">교내외활동</a><br/>
-</div>
+<section><h3 id="chapter2">프로젝트</h3>
+<img src="https://goeun23.github.io/homework/Internet-Programming.png" width = 500px; height = 150px; alt="인터넷프로그래밍인덱스바로가기"/><br/>
+<img src="https://goeun23.github.io/homework/Computer-Structure.png" width = 500px; height = 150px; alt="컴퓨터구조과제바로가기"/><br/>
+<img src="https://goeun23.github.io/homework/C++-programming.png" width = 500px; height = 150px; alt="C++프로젝트바로가기"/><br/>
+<img src="https://goeun23.github.io/homework/Capstone-Design.png" width = 500px; height = 150px; alt="캡스톤디자인프로젝트바로가기(진행중)"/>
+</section>
+<section><h3 id="chapter3">
+ If you have any question, 
+ <input type="button" value="Connect Me" onClick="window.open('http://google.com')"></h3>
 </section>
 <aside>
 <ul>
@@ -108,6 +96,8 @@ a:active {color:blue;background-color:transparent;text-decoration:none;}
 </ul>
 </aside>
 <footer>
-<p>$copy;2018 Made by CHOI GO EUN. All rights reserved.</p> </footer>
+<p>$copy;2018 Made by CHOI GO EUN. All rights reserved.
+<img src = "https://pbs.twimg.com/media/C6p36iLWgAE_v6e.png" width = 150px; height = 100px; alt="페이스북"/></p>
+</footer>
 </body>
 </html>
