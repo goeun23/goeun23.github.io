@@ -2,35 +2,21 @@
 <html><head><meta charset ="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
-.projects{
-  width:1000px;
-  text-align:center;
-  margin:auto;
-}
-.bbutton{
-    width:150px;
-    background-color: #f8585b;
-    border: none;
-    color:#fff;
-    padding: 20px 0;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 4px;
-    cursor: pointer;
-    border-radius:10px;
+body{
+  background-color: #85A938; 
+  text-align :center;
+font-family:"arial";
 }
 .imgontext{
     position: relative;
-    background-image: url(https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851_1280.jpg);
-    width: 1000px;
-    height: 600px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/18/01/29/television-2237425_960_720.png);
+    width: 960px;
+    height: 604px;
     background-size: cover;
 }
 .imgontext .content{
      position: absolute;
-     top:50%;
+    top:40%;
      left:50%;
      transform: translate(-50%, -50%);
      font-size:5rem;
@@ -38,57 +24,78 @@
      z-index: 2;
      text-align: center;
 }
-header, nav, section, article, aside, footer
-{border:1px solid gray; margin:5px; padding:8px; width:1000px; text-align:center;}
+.imgontext .aside{
+     position: absolute;
+     text-align: center;
+     width:200px; height:50px;
+     top:75%;
+     left:50%;
+     transform: translate(-50%,-50%);
+    padding: 20px 0;
+    margin: 4px;
+    cursor: pointer;
+    border-radius:10px;
+}
+.bbutton{
+    width:150px;
+    background-color: #D6F883;
+    border: none;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+font-weight:bold;
+    cursor: pointer;
+    border-radius:10px;
+}
+header{
+  background-image:url('https://cdn.pixabay.com/photo/2018/05/31/15/06/not-hear-3444212_1280.jpg');
+  width:1200px; height:500px;
+font-size: 25px;
+margin: 0 auto;
+margin-bottom: 15px;
+}
+nav, section, article, aside, footer
+{padding:8px; width:1000px; text-align:center; margin: 0 auto;}
 headerimg {width:990px; height:200px;}
-section{width:750px;}
-section section{width:725px; }
-aside{width:221px; line-height:30px;}
 footer{height:50px; clear:both;}
 nav ul{margin:0; padding:0;}
 nav ul li{display:inline; margin:5px;}
 aside ul{margin:0; padding:0;}
 aside ul li{display:block; margin:5px;}
 aside ul li img{width : 50px; height:50px;}
-a:link {color:blue;background-color:transparent;text-decoration:none;}
-a:visited {color:pink;background-color:transparent;text-decoration:none;}
+a:link {color:white;background-color:transparent;text-decoration:none;}
+a:visited {color:white;background-color:transparent;text-decoration:none;}
 a:hover {color:red;background-color:transparent;text-decoration:underline;}
-a:active {color:blue;background-color:transparent;text-decoration:none;}
+a:active {color:white;background-color:transparent;text-decoration:none;}
+@media (max-width: 575px) { width : 100%; }
 </style>
 <title>인터넷프로그래밍 포트폴리오</title></head>
 <body>
 <header>
-<h2>인터넷프로그래밍 포트폴리오</h2>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFq6vS7D6qjNT0zqh1YrNgc4pNOPsqkd41ffk2StIeQQkb8Kd" alt="히말라야"/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><h2>COMPUTER ENGINEER</h2>
 </header>
 <nav>
 <ul>
-<li><a href="#chapter1">MAIN</a></li>
-<li><a href="#chapter2">RESUME</a></li>
-<li><a href="#chapter2">SELF-INTRODUCTION</a></li>
-<li><a href="#chapter3">PROJECTS</a></li>
-<li><a href="#chapter4">TIME TABLE</a></li>
+<li><a href="https://goeun23.github.io/homework/portfolio.html">MAIN</a></li>
+<li><a href="https://goeun23.github.io/homework/resume.html">RESUME</a></li>
+<li><a href="https://goeun23.github.io/homework/resume.html">SELF-INTRODUCTION</a></li>
+<li><a href="https://goeun23.github.io/homework/projects.html">PROJECTS</a></li>
+<li><a href="https://goeun23.github.io/homework/timetable.html">TIME TABLE</a></li>
 <li><a href="https://goeun23.github.io/homework/contact.html">CONTACT</a></li>
 </ul>
 </nav><!-- main -->
+<section>
 <div class="imgontext">
 <div class="content">
 <input type="button" class="bbutton" value="이력서바로가기" onClick="window.open('https://goeun23.github.io/homework/resume.html')">
 <input type="button" class="bbutton" value="자기소개서바로가기" onClick="window.open('https://goeun23.github.io/homework/resume.html')">
 </div>
+<img src="https://2.bp.blogspot.com/-U2qbRiGyRFo/Wlqx0PAL5NI/AAAAAAAADnc/PO8083ty4To0wN0z_eK-Zu7InGqgQf_WQCLcBGAs/s1600/NEW_SOCIAL_BUTTONS_2.png" class = "aside"  value="인스타그램" onClick="window.open('https://www.instagram.com')">
 </div>
-</div><!-- /main -->
-  </section>
-<aside>
-<ul>
-<li><a href="https://www.facebook.com/">
-<img src = "https://image.freepik.com/free-icon/facebok-circular-logo_318-40188.jpg" alt="페이스북"/></a></li>
-<li><a href="https://www.google.com/">
-<img src = "https://image.freepik.com/free-icon/google-plus-logo-button_318-85017.jpg" alt="구글"/></a></li>
-<li><a href="https://www.twitter.com/">
-<img src = "https://image.freepik.com/free-icon/twitter-logo_318-40209.jpg" alt="트위터"/></a></li>
-</ul>
-</aside>
+</section>
 <footer>
 <p>$copy;2018 Made by CHOI GO EUN. All rights reserved.</p>
 </footer>
