@@ -70,14 +70,14 @@ a:link {color:white;background-color:transparent;text-decoration:none;}
 a:visited {color:white;background-color:transparent;text-decoration:none;}
 a:hover {color:red;background-color:transparent;text-decoration:underline;}
 a:active {color:white;background-color:transparent;text-decoration:none;}
-@media (max-width: 575px) { width : 100%; }
+@media only screen and(max-width:768px) { [class*="col-"]{width : 100%;} }
 </style>
 <title>인터넷프로그래밍 포트폴리오</title></head>
 <body>
 <header>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><h2>COMPUTER ENGINEER</h2>
 </header>
-<nav>
+<nav class="col-6 menu">
 <ul>
 <li><a href="https://goeun23.github.io/homework/portfolio.html">MAIN</a></li>
 <li><a href="https://goeun23.github.io/homework/resume.html">RESUME</a></li>
@@ -87,7 +87,7 @@ a:active {color:white;background-color:transparent;text-decoration:none;}
 <li><a href="https://goeun23.github.io/homework/contact.html">CONTACT</a></li>
 </ul>
 </nav><!-- main -->
-<section>
+<section class="col-2">
 <div class="imgontext">
 <div class="content">
 <input type="button" class="bbutton" value="이력서바로가기" onClick="window.open('https://goeun23.github.io/homework/resume.html')"/>
